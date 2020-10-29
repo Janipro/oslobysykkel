@@ -15,5 +15,3 @@ def highest_product_sum(integer_list):
 
     return result
 
-
-print(highest_product_sum([1, 10, 2, 6, 5, 3]))
