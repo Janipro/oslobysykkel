@@ -2,7 +2,7 @@
 # Create a small application that utilizes this api
 # to show the stations and the amount of available
 # bikes and free spots a station currently has.
-# ----------------------------------------------
+# -------------------------------------------------
 
 
 import requests
