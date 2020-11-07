@@ -9,9 +9,23 @@
 def highest_product_sum(integer_list):
     temp = list(integer_list)
     result = 1
+    negatives = 0
+
+    for number in temp:
+        if number < 0:
+            negatives += 1
+
+    if len(temp) < 3 or negatives % 2 != 0:
+        return -1
+
     for i in range(3):
-        result *= max(temp)
-        temp.remove(max(temp))
+        max_element = max(temp)
+        min_element = min(temp)
+        if abs(max_element) < abs(min_element):
+            result *= min(temp)
+            temp.remove(min(temp))
+        else:
+            result *= max(temp)
+            temp.remove(max(temp))
 
     return result
-
