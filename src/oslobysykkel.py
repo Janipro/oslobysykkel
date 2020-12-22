@@ -66,10 +66,10 @@ while True:
         raise SystemExit
 
     if event == "-SEARCH-":
-        name = values["-SEARCH-"]
+        search = values["-SEARCH-"]
         temp = []
         for station in stations:
-            if name in station:
+            if search in station or search in station.lower():
                 temp.append(station)
         window["-STATIONS-"].update(temp)
 

@@ -35,3 +35,7 @@ def highest_product_sum(integer_list):
         return
 
     return result
+
+
+print(highest_product_sum([1,2,3,-3,-4]))
+print(highest_product_sum([1,2,3,3,-2,-3,-4]))
